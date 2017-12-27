@@ -1,31 +1,30 @@
-en:
+vi:
   layouts:
     application:
-      base_title: "RoR Tutorial"
+      base_title: "Hướng dẫn cơ bản RoR"
 
   static_pages:
     home:
-      title: "Home"
-      heading: "Sample App"
+      title: "Trang chủ"
+      heading: "Ứng dụng mẫu"
       content: "This is the home page for the
       <a href=%{home}> Ruby on Rails Tutorial</a> sample application."
     about:
-      title: "About"
-      heading: "About page"
+      title: "Thông tin"
+      heading: "Thông tin"
       content: "The <em><a href=%{home}> Ruby on Rails</a></em> is a
       <a href=%{book}>book</a> and
       <a href=%{screencast_series}> screencast series</a> to teach web development with
       <a href=%{RoR}> Ruby on Rails</a>. This is the sample application for the tutorial."
     help:
-      title: "Help"
-      heading: "Help page"
+      title: "Trợ giúp"
+      heading: "Trợ giúp"
       content: "Get help on the Ruby on Rails Tutorial at the
-      <a href=%{help}> Rails Tutorial help section</a>.
-      To get help on this sample app, see the
-      <a href=%{book}> <em>Ruby on Rails Tutorial</em> book</a>."
+        <a href=%{help}> Rails Tutorial help section</a>.
+        To get help on this sample app, see the
+        <a href=%{book}> <em>Ruby on Rails Tutorial</em> book</a>."
     contact:
-      title: "Contact"
-      heading: "Contact page"
+      title: "Liên hệ"
+      heading: "Liên hệ"
       content: "Contact the Ruby on Rails Tutorial about the sample app at the
-      <a href=#{contact}> contact page</a>."
-
+      s<a href=#{contact}> contact page</a>."
