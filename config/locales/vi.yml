@@ -2,13 +2,24 @@ vi:
   layouts:
     application:
       base_title: "Hướng dẫn cơ bản RoR"
-
+    header:
+      logo: "Sammple App"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    footer:
+      intro: "<a href=%{RoR}>Hướng dẫn cơ bản RoR</a>
+      tác giả <a href=%{MH}>Michael Hartl</a>"
+      about: "Thông tin"
+      contact: "Liên hệ"
+      new: "Cập nhật"
   static_pages:
     home:
       title: "Trang chủ"
       heading: "Ứng dụng mẫu"
       content: "This is the home page for the
       <a href=%{home}> Ruby on Rails Tutorial</a> sample application."
+      signup: "Sign up now"
     about:
       title: "Thông tin"
       heading: "Thông tin"
@@ -20,11 +31,16 @@ vi:
       title: "Trợ giúp"
       heading: "Trợ giúp"
       content: "Get help on the Ruby on Rails Tutorial at the
-        <a href=%{help}> Rails Tutorial help section</a>.
-        To get help on this sample app, see the
-        <a href=%{book}> <em>Ruby on Rails Tutorial</em> book</a>."
+      <a href=%{help}> Rails Tutorial help section</a>.
+      To get help on this sample app, see the
+      <a href=%{book}> <em>Ruby on Rails Tutorial</em> book</a>."
     contact:
       title: "Liên hệ"
       heading: "Liên hệ"
       content: "Contact the Ruby on Rails Tutorial about the sample app at the
-      s<a href=#{contact}> contact page</a>."
+      <a href=#{contact}> contact page</a>."
+  users:
+    new:
+      title: "Đăng kí"
+      heading: "Đăng kí"
+      content: "Đổi thông tin"

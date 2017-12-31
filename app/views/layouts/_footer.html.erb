@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small><%= t(".intro",
+    RoR: "http://www.railstutorial.org/",
+    MH: "http://www.michaelhartl.com/").html_safe %></small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), static_pages_path(:about) %></li>
+      <li><%= link_to t(".contact"), static_pages_path(:contact) %></li>
+      <li><a href="http://news.railstutorial.org/"><%=t(".new")%></a></li>
+    </ul>
+  </nav>
+</footer>
