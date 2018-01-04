@@ -4,4 +4,8 @@ Rails.application.routes.draw do
  get "/signup", to: "users#new"
 
  root "static_pages#show", page: "home"
+
+ post "/signup", to: "users#create"
+
+ resources :users
 end

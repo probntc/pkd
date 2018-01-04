@@ -5,3 +5,10 @@ exclude_paths:
   - 'vendor'
   - 'db/migrate'
 
+"app/controllers":
+  InstanceVariableAssumption:
+    enabled: false
+
+"app/helpers":
+  FeatureEnvy:
+    enabled: false

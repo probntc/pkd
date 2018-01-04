@@ -44,3 +44,21 @@ vi:
       title: "Đăng kí"
       heading: "Đăng kí"
       content: "Đổi thông tin"
+      create: "Tạo tài khoản"
+      confirm: "Xác nhận mật khẩu"
+      name: "Tên đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      sex:
+        male: "Nam"
+        female: "Nữ"
+      t_sex: "Giới tính"
+
+  shared:
+    error_messages:
+      count_error: "Biểu mẫu có chứa"
+      error: "lỗi"
+  controller:
+    users:
+      success: "Chào mừng bạn đến với App mẫu!"
+      danger: "Người dùng không tồn tại"
