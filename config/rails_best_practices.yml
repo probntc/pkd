@@ -24,9 +24,15 @@ RemoveEmptyHelpersCheck: { }
 #RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
 RemoveUnusedMethodsInControllersCheck: {
-  ignored_files: ["static_pages_controller.rb", "users_controller.rb"],
+  except_methods: [
+  "SessionsController#create",
+  "SessionsController#destroy",
+  "UsersController#create",
+  "UsersController#show",
+  "StaticPagesController#show",
+  ] }
+RemoveUnusedMethodsInHelpersCheck: {
   except_methods: [] }
-RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: { except_methods: [] }
 ReplaceComplexCreationWithFactoryMethodCheck: { attribute_assignment_count: 2 }
 ReplaceInstanceVariableWithLocalVariableCheck: { }
