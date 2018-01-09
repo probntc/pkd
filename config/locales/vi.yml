@@ -7,6 +7,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      logout: "Logout"
+      setting: "Setting"
+      profile: "Profile"
+      acc: "Account"
+      user: "User"
     footer:
       intro: "<a href=%{RoR}>Hướng dẫn cơ bản RoR</a>
       tác giả <a href=%{MH}>Michael Hartl</a>"
@@ -54,6 +59,13 @@ vi:
         female: "Nữ"
       t_sex: "Giới tính"
 
+  sessions:
+    new:
+      title: "Login"
+      email: "Email"
+      password: "Password"
+      new: "New user? <a href=%{path}> Sign up now! </a>"
+
   shared:
     error_messages:
       count_error: "Biểu mẫu có chứa"
@@ -62,3 +74,4 @@ vi:
     users:
       success: "Chào mừng bạn đến với App mẫu!"
       danger: "Người dùng không tồn tại"
+      invalid: "Invalid email/password combination"

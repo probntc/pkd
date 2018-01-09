@@ -3,8 +3,6 @@ class User < ApplicationRecord
   LIST_PERMIT_USER = %i(name email password password_confirmation).freeze
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-  before_save :downcase_email
-
   validates :name,  presence: true,
    length: {maximum: Settings.user_model.name_max}
   validates :email, presence: true,
@@ -14,6 +12,8 @@ class User < ApplicationRecord
    length: {minimum: Settings.user_model.password_min}
 
   has_secure_password
+
+  before_save :downcase_email
 
   private
 
