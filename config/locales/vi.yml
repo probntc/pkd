@@ -65,6 +65,7 @@ vi:
       email: "Email"
       password: "Password"
       new: "New user? <a href=%{path}> Sign up now! </a>"
+      remember: "Remember me on this computer"
 
   shared:
     error_messages:
