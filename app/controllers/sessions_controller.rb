@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
   def success user
     log_in user
     params_sessions(:remember_me) == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def unsuccess

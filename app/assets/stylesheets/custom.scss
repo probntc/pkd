@@ -40,7 +40,12 @@ textarea {
 
 // typography //
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1;
 }
 
@@ -65,7 +70,7 @@ p {
   line-height: 1.7em;
 }
 
-#logo {
+.logo {
   color: $white;
   float: left;
   font-size: 1.7em;
@@ -114,7 +119,7 @@ footer {
 
 // miscellaneous //
 
-.debug_dump {
+.debug-dump {
   @include box-sizing;
   clear: both;
   float: left;
@@ -125,7 +130,7 @@ footer {
 // sidebar //
 
 aside {
-  section.user_info {
+  .user-info {
     margin-top: 20px;
   }
 
@@ -159,13 +164,17 @@ aside {
   margin-right: 10px;
 }
 
-.gravatar_edit {
+.gravatar-edit {
   margin-top: 15px;
 }
 
 // forms //
 
-input, textarea, select, .uneditable-input {
+input,
+textarea,
+select,
+
+.uneditable-input {
   @include box-sizing;
   border: 1px solid $gray-light;
   margin-bottom: 15px;
@@ -176,7 +185,7 @@ input {
   height: auto;
 }
 
-#error_explanation {
+.error-explanation {
   color: $red;
 
   ul {
@@ -185,7 +194,7 @@ input {
   }
 }
 
-.field_with_errors {
+.field-with-errors {
   @extend %has-error !optional;
 
   .form-control {
@@ -203,8 +212,20 @@ checkbox {
   }
 }
 
-#session_remember_me {
+.session-remember-me {
   margin-left: 0;
   width: auto;
 }
 
+// Users index //
+
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+}

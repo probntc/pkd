@@ -18,6 +18,7 @@ vi:
       about: "Thông tin"
       contact: "Liên hệ"
       new: "Cập nhật"
+
   static_pages:
     home:
       title: "Trang chủ"
@@ -44,6 +45,7 @@ vi:
       heading: "Liên hệ"
       content: "Contact the Ruby on Rails Tutorial about the sample app at the
       <a href=#{contact}> contact page</a>."
+
   users:
     new:
       title: "Đăng kí"
@@ -58,6 +60,26 @@ vi:
         male: "Nam"
         female: "Nữ"
       t_sex: "Giới tính"
+    edit:
+      title: "Edit user"
+      heading: "Update your profile"
+      save: "Save changes"
+      change: "Cập nhật avatar"
+    index:
+      title: "All users"
+    user:
+      sure: "You sure?"
+      delete: "delete"
+    form:
+      create: "Save changes"
+      name: "Tên đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      sex:
+        male: "Nam"
+        female: "Nữ"
+      t_sex: "Giới tính"
+      confirm: "Confirm"
 
   sessions:
     new:
@@ -71,8 +93,12 @@ vi:
     error_messages:
       count_error: "Biểu mẫu có chứa"
       error: "lỗi"
+
   controller:
     users:
-      success: "Chào mừng bạn đến với App mẫu!"
+      save: "Chào mừng bạn đến với App mẫu!"
       danger: "Người dùng không tồn tại"
       invalid: "Invalid email/password combination"
+      pls: "Please log in."
+      update: "Profile updated"
+      destroy: "User deleted"
