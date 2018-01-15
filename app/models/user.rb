@@ -5,15 +5,6 @@ class User < ApplicationRecord
 
   attr_reader :remember_token
 
-  def remember
-    @remember_token = User.new_token
-    update_attributes remember_digest: User.digest(remember_token)
-  end
-
-  def forget
-    update_attributes remember_digest: nil
-  end
-
   validates :name,  presence: true,
    length: {maximum: Settings.user_model.name_max}
   validates :email, presence: true,
@@ -42,9 +33,22 @@ class User < ApplicationRecord
     end
   end
 
+  def remember
+    @remember_token = User.new_token
+    update_attributes remember_digest: User.digest(remember_token)
+  end
+
+  def forget
+    update_attributes remember_digest: nil
+  end
+
   def authenticated? remember_token
     return false if remember_digest.blank?
     BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
+
+  def current_user? current_user
+    self == current_user
   end
 
   private
