@@ -5,7 +5,12 @@ class SessionsController < ApplicationController
     user = User.find_by email: params_sessions(:email)
 
     if user && user.authenticate(params_sessions :password)
-      success user
+      if user.activated?
+        success user
+      else
+        activated_fail
+      end
+
     else
       unsuccess
     end
@@ -27,5 +32,10 @@ class SessionsController < ApplicationController
   def unsuccess
     flash[:danger] = t "controller.users.invalid"
     render :new
+  end
+
+  def activated_fail
+    flash[:warning] = t "controller.users.activated_fail"
+    redirect_to root_url
   end
 end

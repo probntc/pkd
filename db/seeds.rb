@@ -4,12 +4,14 @@ User.create!(
   password: "12345678",
   password_confirmation: "12345678",
   sex: 0,
-  admin: true
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
   )
 
 99.times do |n|
   name = Faker::Name.name
-  email = "master#{n+1}@mail.org"
+  email = "master#{n+1}@mail.com"
   password = "12345678"
   sex = Faker::Number.between(0, 1)
   User.create!(
@@ -18,5 +20,7 @@ User.create!(
     password: password,
     password_confirmation: password,
     sex: sex,
+    activated: true,
+    activated_at: Time.zone.now
     )
 end
